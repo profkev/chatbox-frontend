@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.app-header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-header i {
+    margin-right: 10px;
+    font-size: 2em;
+}
+
+.app-header h1 {
+    margin: 0;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.example-questions {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.example-questions h3 {
+    margin: 0 0 5px 0;
+}
+
+.example-questions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.example-questions li {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.messages {
+    flex-grow: 1;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.message.user {
+    background-color: #e1ffc7;
+    align-self: flex-end;
+}
+
+.message.bot {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #343a40;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #495057;
+}
+
+.app-footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-footer i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}

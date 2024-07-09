@@ -8,7 +8,7 @@ const Chat = () => {
 
     const handleSend = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/query', { text: input });
+            const response = await axios.post('https://chatbox-backend-b6sc.onrender.com/query', { text: input });
             setMessages([...messages, { text: input, user: true }, { text: response.data.answer, user: false }]);
             setInput('');
         } catch (error) {
